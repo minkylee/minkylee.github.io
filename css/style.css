@@ -822,7 +822,7 @@ button {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -862,6 +862,108 @@ button {
 
 .footer-bottom .icp {
     margin-top: 8px;
+}
+
+/* ============================================
+   法律文档
+   ============================================ */
+.legal-page {
+    background: var(--bg-light);
+}
+
+.legal-main {
+    padding-top: 72px;
+}
+
+.legal-hero {
+    background: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.legal-hero-inner {
+    padding-top: 64px;
+    padding-bottom: 44px;
+}
+
+.legal-back {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.legal-back:hover {
+    color: var(--primary-dark);
+}
+
+.legal-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1.2;
+    color: var(--text-primary);
+    margin: 10px 0 18px;
+}
+
+.legal-hero p:not(.section-tag) {
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+}
+
+.legal-document {
+    max-width: 880px;
+    padding-top: 56px;
+    padding-bottom: 72px;
+}
+
+.legal-document h2 {
+    color: var(--text-primary);
+    font-size: 1.45rem;
+    line-height: 1.4;
+    margin: 42px 0 14px;
+}
+
+.legal-document h3 {
+    color: var(--text-primary);
+    font-size: 1.08rem;
+    line-height: 1.5;
+    margin: 26px 0 10px;
+}
+
+.legal-document p,
+.legal-document li {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.legal-document p + p {
+    margin-top: 14px;
+}
+
+.legal-document ul {
+    list-style: disc;
+    padding-left: 1.4em;
+    margin: 12px 0 0;
+}
+
+.legal-document li + li {
+    margin-top: 8px;
+}
+
+.legal-document a,
+.legal-footer-bottom a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.legal-document a:hover,
+.legal-footer-bottom a:hover {
+    color: var(--accent);
+}
+
+.legal-footer-bottom {
+    padding-top: 0;
 }
 
 /* ============================================
@@ -1084,4 +1186,3 @@ button {
         flex-direction: column;
     }
 }
-
